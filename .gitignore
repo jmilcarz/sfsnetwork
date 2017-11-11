@@ -99,7 +99,6 @@ Temporary Items
 
 
 ### app catalog ###
-app/
-*
+app/*
 
 # End of https://www.gitignore.io/api/osx,sass,images
