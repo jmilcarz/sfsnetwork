@@ -3,7 +3,7 @@
 // system
 $system_name = "phpstarter";
 $systen_lang = "en";
-$system_host_url = "localhost/phpstarter";
+$system_host_url = "localhost/sfsnetwork";
 $system_Mail_email = "phpstarter@phpstarter.example";
 $system_Mail_password = "phpstarter";
 $system_Mail_sentFrom = "phpstarter";
