@@ -10,7 +10,7 @@ class Mail {
                 $mail->Port = '465';
                 $mail->isHTML();
                 $mail->Username = 'noreplay.networkkuby@gmail.com';
-                $mail->Password = 'kubaa';
+                $mail->Password = 'secret';
                 $mail->SetFrom('SFS NETWORK');
                 $mail->Subject = $subject;
                 $mail->Body = $body;

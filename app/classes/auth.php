@@ -101,7 +101,7 @@ class auth {
                     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
                     if (!DB::query('SELECT email FROM users WHERE email=:email', [':email'=>$email])) {
 
-                         DB::query('INSERT INTO users VALUES (\'\', :firstname, :lastname, :username, :email, :password)', [':firstname'=>$firstname, ':lastname'=>$lastname, ':username'=>$username, ':email'=>$email, ':password'=>password_hash($password, PASSWORD_BCRYPT)]);
+                         DB::query('INSERT INTO users VALUES (\'\', :firstname, :lastname, :username, :email, :password, \'\', \'\', 0)', [':firstname'=>$firstname, ':lastname'=>$lastname, ':username'=>$username, ':email'=>$email, ':password'=>password_hash($password, PASSWORD_BCRYPT)]);
                          Mail::sendMail('Welcome!', 'Your account has been created!', $email);
                          self::login($username, $password);
 

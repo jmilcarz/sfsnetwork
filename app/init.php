@@ -1,8 +1,8 @@
 <?php
 
 // system
-$system_name = "phpstarter";
-$systen_lang = "en";
+$system_name = "sfsnetwork";
+$systen_lang = "pl";
 $system_host_url = "localhost/sfsnetwork";
 $system_Mail_email = "phpstarter@phpstarter.example";
 $system_Mail_password = "phpstarter";
@@ -28,4 +28,6 @@ if (isset($_POST['signoutbtn'])) {
 }
 
 $loggedin = auth::loggedin();
-$loggedinUserID = DB::query('SELECT id FROM users WHERE id=:id', [':id'=>$loggedin]);
+$user = DB::query('SELECT * FROM users WHERE id=:id', [':id'=>$loggedin])[0];
+$userid = $user['id'];
+$userFullName = $user['firstname'] . " " . $user['lastname'];
