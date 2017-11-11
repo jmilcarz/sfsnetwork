@@ -99,7 +99,8 @@ Temporary Items
 
 
 ### app catalog ###
-app/*
+app/classes/db.php
+app/classes/Mail.php
 PHPMailer/*
 
 # End of https://www.gitignore.io/api/osx,sass,images
