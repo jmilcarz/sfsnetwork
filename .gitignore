@@ -97,4 +97,9 @@ Temporary Items
 .sass-cache/
 *.css.map
 
+
+### app catalog ###
+app/
+*
+
 # End of https://www.gitignore.io/api/osx,sass,images
